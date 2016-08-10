@@ -11,9 +11,9 @@ class Config:
 	MAIL_USE_TLS = True
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-	BLOGGING_APP_MAIL_SUBJECT_PREFIX = '[blogging_app] '
-	BLOGGING_APP_MAIL_SENDER = 'Blogging App Admin <{}>'.format(os.environ.get('MAIL_USERNAME'))
-	BLOGGING_APP_ADMIN = os.environ.get('BLOGGING_APP_ADMIN')
+	BLOGAPP_MAIL_SUBJECT_PREFIX = '[Blogapp] '
+	BLOGAPP_MAIL_SENDER = 'Blogapp Admin <{}>'.format(os.environ.get('MAIL_USERNAME'))
+	BLOGAPP_ADMIN = os.environ.get('BLOGAPP_ADMIN')
 
 	@staticmethod
 	def init_app(app):

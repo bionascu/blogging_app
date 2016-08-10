@@ -1,3 +1,4 @@
+# application package constructor
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
